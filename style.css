@@ -2322,11 +2322,6 @@ address, caption, cite, code, dfn, em, var {
     color: #333
   }
 
-  /* 리스트 및 방명록 공통 */
-  .cont_skin {
-    margin-top: 63px
-  }
-
   #tt-body-search .area_head .btn_name,
   #tt-body-search .area_head .txt_condition,
   #tt-body-tag .area_head .btn_name,
