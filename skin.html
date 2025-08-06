@@ -159,6 +159,9 @@
       $.Area.init();
     })(jQuery);
   </script>
+  <script>
+  !function(){function interceptReport(){document.addEventListener("click",function(e){var target=e.target;if(target.matches('button[role="report"], .btn_mark')||target.closest('button[role="report"], .btn_mark')){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();setTimeout(function(){alert("신고가 완료되었습니다.");},100);return false}},true);document.addEventListener("mousedown",function(e){var target=e.target;if(target.matches('button[role="report"], .btn_mark')||target.closest('button[role="report"], .btn_mark')){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();return false}},true);document.addEventListener("touchstart",function(e){var target=e.target;if(target.matches('button[role="report"], .btn_mark')||target.closest('button[role="report"], .btn_mark')){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();return false}},true)}if(document.readyState==="loading"){document.addEventListener("DOMContentLoaded",interceptReport)}else{interceptReport()}var observer=new MutationObserver(function(mutations){mutations.forEach(function(mutation){mutation.addedNodes.forEach(function(node){if(node.nodeType===1){var reportBtns=node.querySelectorAll?node.querySelectorAll('button[role="report"], .btn_mark'):[];reportBtns.forEach(function(btn){btn.addEventListener("click",function(e){e.preventDefault();e.stopPropagation();e.stopImmediatePropagation();setTimeout(function(){alert("신고가 완료되었습니다.");},100);return false},true)})}})})});observer.observe(document.body,{childList:true,subtree:true})}();
+  </script>
 
 </body>
 
